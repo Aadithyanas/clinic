@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: 'AW Conqueror Std Didot';
+  src: local('AW Conqueror Std Didot Bold'), local('AWConquerorStd-DidotBold');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@theme {
+  --color-skin-50: #fdf8f6;
+  --color-skin-100: #f2e8e5;
+  --color-skin-200: #eaddd7;
+  --color-skin-300: #e0cec7;
+  --color-skin-400: #d2bab0;
+  --color-skin-500: #a18072;
+  --color-skin-600: #977669;
+  --color-skin-700: #846358;
+  --color-skin-800: #43302b;
+  --color-skin-900: #291812;
+  
+  --color-primary-50: #f7f2ef;
+  --color-primary-100: #ebdcd3;
+  --color-primary-500: #d9b69f;
+  --color-primary-600: #845434;
+  --color-primary-700: #714624;
+  --color-primary-900: #62412f;
+
+  --font-playfair: var(--font-playfair);
+  --font-conqueror: 'AW Conqueror Std Didot', serif;
+}
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 20 14.3% 4.1%;
+  }
+
+  .dark {
+    --background: 20 14.3% 4.1%;
+    --foreground: 0 0% 100%;
+  }
+}
+
+@layer base {
+  body {
+    @apply bg-skin-50 text-skin-900 antialiased overflow-x-hidden;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
