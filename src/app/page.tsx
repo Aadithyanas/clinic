@@ -16,19 +16,19 @@ export default function Home() {
           <div className="flex items-center">
             <img src="/images/logo.png" alt="Dermanova Logo" className="h-12 w-auto mr-3" />
             <div className="flex flex-col">
-              <div className="font-playfair text-xl sm:text-2xl font-bold tracking-widest text-[#7a4d30] leading-none mb-1">
+              <div className="font-playfair text-xl sm:text-2xl font-bold tracking-widest text-brand-brown leading-none mb-1">
                 DERMANOVA <span className="font-normal sm:text-xl">Skin Clinic</span>
               </div>
-              <div className="text-[0.55rem] sm:text-[0.65rem] font-bold tracking-[0.2em] text-[#7a4d30]/80 leading-none">
+              <div className="text-[0.55rem] sm:text-[0.65rem] font-bold tracking-[0.2em] text-brand-brown/80 leading-none">
                 SKIN | HAIR | LASER
               </div>
             </div>
           </div>
           <div className="hidden md:flex space-x-8 text-sm font-medium text-skin-700">
-            <a href="#about" className="hover:text-[#7a4d30] transition-colors">About</a>
-            <a href="#services" className="hover:text-[#7a4d30] transition-colors">Services</a>
-            <a href="#reviews" className="hover:text-[#7a4d30] transition-colors">Reviews</a>
-            <a href="#location" className="hover:text-[#7a4d30] transition-colors">Location</a>
+            <a href="#about" className="hover:text-brand-brown transition-colors">About</a>
+            <a href="#services" className="hover:text-brand-brown transition-colors">Services</a>
+            <a href="#reviews" className="hover:text-brand-brown transition-colors">Reviews</a>
+            <a href="#location" className="hover:text-brand-brown transition-colors">Location</a>
           </div>
           <button className="bg-primary-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-primary-700 transition-all shadow-lg hover:shadow-primary-500/30">
             Book Appointment
@@ -50,7 +50,7 @@ export default function Home() {
             </div>
             <h1 className="font-outfit text-5xl md:text-7xl font-bold text-skin-900 leading-tight mb-6">
               Reveal Your <br />
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-600 to-primary-500">
+              <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-brown to-primary-500">
                 Natural Radiance
               </span>
             </h1>
@@ -142,7 +142,7 @@ export default function Home() {
       <section id="services" className="py-24 bg-skin-100 relative z-10">
         <div className="max-w-7xl mx-auto px-6">
           <div className="text-center mb-16">
-            <h2 className="font-outfit text-3xl md:text-5xl font-bold text-[#7a4d30] mb-4">Our Services</h2>
+            <h2 className="font-outfit text-3xl md:text-5xl font-bold text-brand-brown mb-4">Our Services</h2>
             <p className="text-skin-700 max-w-2xl mx-auto text-lg">Comprehensive dermatological and aesthetic treatments customized for your unique needs.</p>
           </div>
 
@@ -183,20 +183,20 @@ export default function Home() {
                 className="bg-white rounded-3xl overflow-hidden shadow-lg border border-skin-200 hover:shadow-2xl transition-all duration-300 group flex flex-col"
               >
                 <div className="h-48 overflow-hidden relative">
-                  <div className="absolute inset-0 bg-[#7a4d30]/20 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0" />
+                  <div className="absolute inset-0 bg-brand-brown/20 mix-blend-multiply z-10 transition-opacity group-hover:opacity-0" />
                   <img src={service.image} alt={service.title} className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
                 </div>
                 <div className="p-8 flex-1 flex flex-col">
-                  <h3 className="font-outfit text-2xl font-bold text-[#7a4d30] mb-4">{service.title}</h3>
+                  <h3 className="font-outfit text-2xl font-bold text-brand-brown mb-4">{service.title}</h3>
                   <ul className="space-y-2 mb-6 flex-1">
                     {service.items.map((item, j) => (
                       <li key={j} className="flex items-start text-skin-700">
-                        <span className="text-[#7a4d30] mr-2 mt-1">•</span>
+                        <span className="text-brand-brown mr-2 mt-1">•</span>
                         <span className="leading-snug">{item}</span>
                       </li>
                     ))}
                   </ul>
-                  <button className="text-[#7a4d30] font-semibold flex items-center group-hover:text-amber-700 transition-colors">
+                  <button className="text-brand-brown font-semibold flex items-center group-hover:text-amber-700 transition-colors">
                     Learn more <ArrowRight className="w-4 h-4 ml-1" />
                   </button>
                 </div>
@@ -207,7 +207,7 @@ export default function Home() {
       </section>
 
       {/* Reviews Section */}
-      <section id="reviews" className="py-24 bg-[#7a4d30] text-white relative overflow-hidden">
+      <section id="reviews" className="py-24 bg-brand-brown text-white relative overflow-hidden">
         <div className="absolute inset-0 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')] opacity-10 mix-blend-overlay"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <div className="flex flex-col md:flex-row items-end justify-between mb-16">
@@ -315,11 +315,11 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-[#7a4d30] text-skin-100 py-12 border-t border-white/10">
+      <footer className="relative z-10 bg-brand-brown text-white py-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
           <div className="col-span-2">
             <div className="flex items-center mb-6">
-              <img src="/images/logo.png" alt="Dermanova Logo" className="h-14 w-auto mr-3 brightness-0 invert" />
+              <img src="/images/logo.png" alt="Dermanova Logo" className="h-14 w-auto mr-3 opacity-100" />
               <div className="flex flex-col">
                 <div className="font-playfair text-2xl font-bold tracking-widest text-white leading-none mb-1">
                   DERMANOVA <span className="font-normal text-xl">Skin Clinic</span>
@@ -338,6 +338,7 @@ export default function Home() {
               <li><a href="#treatments" className="hover:text-primary-400 transition-colors">Treatments</a></li>
               <li><a href="#reviews" className="hover:text-primary-400 transition-colors">Reviews</a></li>
               <li><a href="#contact" className="hover:text-primary-400 transition-colors">Contact</a></li>
+              <li><a href="/login" className="text-white/60 hover:text-white transition-colors pt-4 inline-block">Staff Login</a></li>
             </ul>
           </div>
           <div>
